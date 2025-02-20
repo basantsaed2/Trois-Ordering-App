@@ -24,14 +24,19 @@ const Banners = () => {
                             options={{
                                    type   : 'loop',
                                    autoplay: true,
-                                   padding:'5%',
+                                   padding:'20%',
                                    interval: 3000,
                                    perPage: 1,
                                    pauseOnHover: true,
                                    arrows: false,
                                    pagination: true, // Enables pagination
                                    gap: '1rem',
-                                   // perMove: 1, // Move 2 at a time          
+                                   // perMove: 1, // Move 2 at a time 
+                                   breakpoints: {
+                                          1024: { padding: '20%' }, // Adjust padding for medium screens
+                                          768: { padding: '10%' },  // Adjust padding for tablets
+                                          480: { padding: '5%' },   // Adjust padding for small screens
+                                   },         
                             }}
                             // aria-label="Banners Images"
                      >

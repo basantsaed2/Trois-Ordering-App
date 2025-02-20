@@ -334,7 +334,7 @@ const CategoriesNavSection = () => {
                     pauseOnHover: true,
                     breakpoints: {
                     1024: { perPage: 6 },
-                    768: { perPage: 4 },
+                    768: { perPage: 3 },
                     480: { perPage: 3 },
                     },
                 }}
@@ -362,7 +362,7 @@ const CategoriesNavSection = () => {
                                 alt="category"
                             />
                             </div>
-                            <span className="text-xs md:text-md truncate">{category?.name || '-'}</span>
+                            <span className="text-xs md:text-lg truncate">{category?.name || '-'}</span>
                         </div>
                         ))}
                     </div>
