@@ -5,7 +5,7 @@ const StaticSpinner = () => {
        return (
               <>
                      <div className='w-full h-full flex justify-center items-center'>
-                            <PulseLoader color='#9E090F' size={20} />
+                            <PulseLoader color='#d1751f' size={20} />
                      </div>
               </>
        )

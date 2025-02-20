@@ -23,10 +23,10 @@ const LoginPage = () => {
        const [password, setPassword] = useState('');
        const [token, setToken] = useState('');
 
-       const { postData: postEmail, loadingPost: loadingEmail, response: responseEmail } = usePost({ url: 'https://bcknd.food2go.online/customer/otp/create_code' });
-       const { postData: postPhone, loadingPost: loadingPhone, response: responsePhone } = usePost({ url: 'https://bcknd.food2go.online/api/user/auth/signup/phone_code' });
-       const { postData: postLogin, loadingPost: loadingLogin, response: responseLogin } = usePost({ url: 'https://bcknd.food2go.online/api/user/auth/login' });
-       const { postData: postNewLogin, loadingPost: loadingNewLogin, response: responseNewLogin } = usePost({ url: 'https://bcknd.food2go.online/customer/otp/change_password' });
+       const { postData: postEmail, loadingPost: loadingEmail, response: responseEmail } = usePost({ url: 'https://triosbcknd.food2go.online/customer/otp/create_code' });
+       const { postData: postPhone, loadingPost: loadingPhone, response: responsePhone } = usePost({ url: 'https://triosbcknd.food2go.online/api/user/auth/signup/phone_code' });
+       const { postData: postLogin, loadingPost: loadingLogin, response: responseLogin } = usePost({ url: 'https://triosbcknd.food2go.online/api/user/auth/login' });
+       const { postData: postNewLogin, loadingPost: loadingNewLogin, response: responseNewLogin } = usePost({ url: 'https://triosbcknd.food2go.online/customer/otp/change_password' });
 
        const customInput = ({ events, props }) => {
               const { invalid, ...inputProps } = props;
@@ -142,7 +142,7 @@ const LoginPage = () => {
                                                         <HeaderNavigate title={'LogIn'} />
                                                         <div className={`${newPassState ? 'mt-16' : 'mt-5'} flex w-full flex-col items-start justify-start gap-y-4`}>
                                                                <span className='sm:text-4xl xl:text-5xl font-TextFontRegular text-secoundColor'>
-                                                                      {newPassState ? 'Set Your New Password' : 'Login to Food2go'}
+                                                                      {newPassState ? 'Set Your New Password' : 'Login to Trios'}
                                                                </span>
                                                         </div>
                                                         <div className="w-full flex flex-col justify-center gap-y-10">

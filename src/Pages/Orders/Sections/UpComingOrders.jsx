@@ -10,7 +10,7 @@ import { useChangeState } from '../../../Hooks/useChangeState';
 
 const UpComingOrders = () => {
   const { refetch: refetchOrders, loading: loadingOrders, data: dataOrders } = useGet({
-    url: 'https://bcknd.food2go.online/customer/orders',
+    url: 'https://triosbcknd.food2go.online/customer/orders',
   });
   const { changeState: cancelOrder, loadingChange: loadingCancel, responseChange: responseCancel } = useChangeState();
 
@@ -43,7 +43,7 @@ const UpComingOrders = () => {
   // Cancelled Order
   const handleCancelOrder = async (id, name, status) => {
     const response = await cancelOrder(
-      `https://bcknd.food2go.online/customer/orders/cancel/${id}`,
+      `https://triosbcknd.food2go.online/customer/orders/cancel/${id}`,
       `${name} is Cancelled.`,
       { status }
     );

@@ -6,6 +6,7 @@ import { MdFavoriteBorder, MdRestaurantMenu } from 'react-icons/md';
 import CartIcon from '../../assets/Icons/CartIcon';
 import { LuUserRound } from 'react-icons/lu';
 import { useSelector } from 'react-redux';
+import TriosLogo from '../../assets/Images/TriosLogo.jpg'
 
 const Navbar = () => {
        const location = useLocation();
@@ -21,8 +22,8 @@ const Navbar = () => {
                             <nav className='relative w-full flex align-center justify-between py-3 sm:px-5 xl:px-10 bg-white shadow-md'>
                                    <div className='sm:w-6/12 xl:w-3/12 flex items-center justify-start gap-x-2 z-10'>
                                           <Link to={'/'} className="flex items-center justify-start gap-x-2">
-                                                 <RedLogo width={45} />
-                                                 <span className='text-3xl text-mainColor font-TextFontRegular'>Food2go</span>
+                                                 <img src={TriosLogo} width={50} height={50} alt="Logo" />
+                                                 <span className='text-3xl text-mainColor font-TextFontRegular'>Trios</span>
                                           </Link>
                                    </div>
                                    <div className='sm:hidden xl:flex w-5/12 items-center'>

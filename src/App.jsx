@@ -19,27 +19,27 @@ const App = () => {
   const scrollContainerRef = useRef(null); // Ref for the scrollable container
 
   const { refetch: refetchSignUp, loading: loadingSignUp, data: dataSignUp } = useGet({
-    url: 'https://bcknd.food2go.online/api/customer_login',
+    url: 'https://triosbcknd.food2go.online/api/customer_login',
   });
   const { refetch: refetchMaintenance, loading: loadingMaintenance, data: dataMaintenance } = useGet({
-    url: 'https://bcknd.food2go.online/api/business_setup',
+    url: 'https://triosbcknd.food2go.online/api/business_setup',
   });
 
   const { refetch: refetchProducts, loading: loadingProducts, data: dataProducts } = useGet({
-    url: 'https://bcknd.food2go.online/customer/home/web_products',
+    url: 'https://triosbcknd.food2go.online/customer/home/web_products',
   });
 
   const { refetch: refetchCheckOutDetails, loading: loadingCheckOutDetails, data: dataCheckOutDetails } = useGet({
-    url: 'https://bcknd.food2go.online/customer/order_type',
+    url: 'https://triosbcknd.food2go.online/customer/order_type',
     required: true,
   });
 
   const { refetch: refetchBannerData, loading: loadingBannerData, data: dataBanner } = useGet({
-    url: 'https://bcknd.food2go.online/customer/home/slider',
+    url: 'https://triosbcknd.food2go.online/customer/home/slider',
   });
 
   const { refetch: refetchBranchData, loading: loadingBranchData, data: dataBranch } = useGet({
-    url: 'https://bcknd.food2go.online/customer/order_type',
+    url: 'https://triosbcknd.food2go.online/customer/order_type',
   });
 
   useEffect(() => {

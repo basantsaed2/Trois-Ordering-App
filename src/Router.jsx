@@ -25,6 +25,7 @@ import {
 } from "./Pages/page";
 import ProtectedLogin from "./ProtectedData/ProtectedLogin";
 import { AuthLayout } from "./Layouts/Layouts";
+import NewMenuPage from "./Pages/Menu/NewMenuPage";
 
 export const router = createBrowserRouter(
   [
@@ -88,6 +89,10 @@ export const router = createBrowserRouter(
         {
           path: 'menu',
           element: <MenuPage />,
+        },
+        {
+          path: 'trois_menu',
+          element: <NewMenuPage />,
         },
         {
           path: 'branches',

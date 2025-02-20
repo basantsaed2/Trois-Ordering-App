@@ -8,7 +8,7 @@ import { GiCancel } from 'react-icons/gi';
 const OrderTraking = () => {
        const { orderId } = useParams();
        const { refetch: refetchOrders, loading: loadingOrders, data: dataOrder } = useGet({
-              url: `https://bcknd.food2go.online/customer/orders/order_status/${orderId}}`,
+              url: `https://triosbcknd.food2go.online/customer/orders/order_status/${orderId}}`,
        });
 
        const [orderStatus, setOrderStatus] = useState('');

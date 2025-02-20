@@ -5,7 +5,7 @@ import EmptyOrdersIcon from '../../../assets/Icons/EmptyOrdersIcon';
 
 const HistoryOrders = () => {
        const { refetch: refetchOrdersHistory, loading: loadingOrdersHistory, data: dataOrdersHistory } = useGet({
-              url: 'https://bcknd.food2go.online/customer/orders/history',
+              url: 'https://triosbcknd.food2go.online/customer/orders/history',
        });
 
        const [ordersHistory, setOrdersHistory] = useState([]);

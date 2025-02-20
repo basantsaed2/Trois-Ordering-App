@@ -37,7 +37,7 @@ const CheckOutPage = () => {
               ))
        }, [allProducts]);
 
-       const { postData: postOrder, loadingPost: loadingOrder, response: responseOrder } = usePost({ url: 'https://bcknd.food2go.online/customer/make_order', type: true });
+       const { postData: postOrder, loadingPost: loadingOrder, response: responseOrder } = usePost({ url: 'https://triosbcknd.food2go.online/customer/make_order', type: true });
 
        const handleSendOrder = () => {
               postOrder(order, 'Order Placed Successfully')

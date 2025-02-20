@@ -13,7 +13,7 @@ const OtpVerificationPage = () => {
        const dispatch = useDispatch()
        const navigate = useNavigate();
 
-       const { postData, loadingPost, response } = usePost({ url: 'https://lamadabcknd.food2go.online/api/admin/auth/login' }); // Destructure as an object
+       const { postData, loadingPost, response } = usePost({ url: 'https://triosbcknd.food2go.online/api/admin/auth/login' }); // Destructure as an object
        const [token, setToken] = useState('');
 
        const customInput = ({ events, props }) => {
