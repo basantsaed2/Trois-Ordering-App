@@ -144,7 +144,7 @@ const SignUpPage = () => {
        return (
               <>
                      <form onSubmit={handleSignUp} className="w-full flex items-center justify-center mx-auto h-screen overflow-hidden">
-                            <div className="sm:w-full flex flex-col items-start justify-start gap-y-3 h-full">
+                            <div className="sm:w-full flex flex-col items-start justify-start gap-y-4 md:gap-y-8 h-full">
                                    {loadingSignUp || loadingEmail || loadingPhone ?
                                           (
                                                  <>
@@ -163,13 +163,13 @@ const SignUpPage = () => {
                                                                              />
                                                                       </div>
 
-                                                                      <div className="flex w-full  flex-col items-start justify-start gap-y-8">
+                                                                      {/* <div className="flex w-full  flex-col items-start justify-start gap-y-8"> */}
                                                                              {/* <span className='sm:text-4xl xl:text-5xl font-TextFontRegular text-secoundColor'>Sign Up to Trios</span> */}
-                                                                      </div>
+                                                                      {/* </div> */}
                                                                       <div className="w-full flex flex-col justify-center  gap-y-6 ">
 
                                                                              <div className="w-full flex flex-col justify-center gap-y-6">
-                                                                                    <div className="w-full flex sm:flex-col lg:flex-row items-center justify-between gap-3 ">
+                                                                                    <div className="w-full flex sm:flex-col lg:flex-row items-center justify-between gap-6 lg:gap-3">
                                                                                            <TextInput
                                                                                                   value={firstName}
                                                                                                   placeholder={'First Name'}

@@ -7,50 +7,61 @@ const ContactusPage = () => {
   const [email,setEmail] = useState('')
   const [describtion ,setDescribtion]= useState('')
   return (
-<div className="flex flex-wrap min-h-screen items-center justify-center">
-  
-  <div className="contact-left w-full md:w-1/2 flex flex-col p-10">
-    <div className="title mb-8">
-      <h2 className="text-3xl font-bold">We are happy to answer your</h2>
-      <h2 className="text-3xl font-bold">questions at any time.</h2>
+<div className="flex flex-col-reverse md:flex-row min-h-screen justify-center bg-gray-50 py-4 lg:py-10 px-4">
+ 
+   {/* Left Section: Contact Form */}
+   <div className="contact-left w-full md:w-1/2 flex flex-col p-2 space-y-3">
+    <div className="title mb-3 text-center md:text-left">
+      <h2 className="text-2xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+        We are happy to answer your  
+      </h2>
+      <h2 className="text-2xl md:text-4xl font-extrabold text-mainColor leading-tight">
+        questions at any time.
+      </h2>
+      <p className="text-gray-600 mt-2 text-lg">
+        Feel free to reach out with any inquiries. We're here to help!
+      </p>
     </div>
-    <form action="" className="flex flex-col space-y-6">
+
+    <form className="flex flex-col space-y-3">
       <input 
         type="text" 
         placeholder="Full Name" 
-        className="bg-gray-200 p-4 rounded-lg w-[60%] focus:outline-none focus:ring-2 focus:ring-mainColor" 
+        className="bg-gray-200 shadow-sm p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-mainColor transition-all"
       />
       <input 
         type="email" 
         placeholder="Email" 
-        className="bg-gray-200 p-4 rounded-lg w-[60%] focus:outline-none focus:ring-2 focus:ring-mainColor" 
+        className="bg-gray-200 shadow-sm p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-mainColor transition-all"
       />
-      <input 
-        type="text" 
-        placeholder="Description" 
-        className="bg-gray-200 p-4 rounded-lg w-[60%] focus:outline-none focus:ring-2 focus:ring-mainColor" 
-      />
+      <textarea
+        placeholder="Message"
+        rows="4"
+        className="bg-gray-200 shadow-sm p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-mainColor transition-all resize-none"
+      ></textarea>
+      
       <Link 
         to={''} 
-        className='self-start sm:text-xl xl:text-2xl text-center w-[60%] text-white bg-mainColor px-16
-                    py-2 rounded-2xl hover:bg-transparent hover:text-mainColor border-2
-                    border-mainColor transition-all ease-in-out duration-300'>
-        Send
+        className="self-center md:self-start text-lg text-center w-full md:w-auto text-white bg-mainColor px-6 py-3 rounded-lg font-semibold 
+                   hover:bg-transparent hover:text-mainColor border-2 border-mainColor transition-all ease-in-out duration-300">
+        Send Message
       </Link>
     </form>
   </div>
-
  
-  <div className="contact-right w-full md:w-1/2 flex items-center justify-center p-10">
-    <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+  {/* Right Section: Image (Appears first on small screens) */}
+  <div className="contact-right w-full md:w-1/2 flex items-center justify-center p-2 lg:p-4">
+    <div className="relative w-full md:w-4/5 h-40 md:h-80 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
       <img 
-        src={image}
+        src={image} 
         alt="Contact Us" 
-        className="w-full h-full object-cover rounded-lg" 
+        className="w-full h-full object-cover"
       />
     </div>
   </div>
+
 </div>
+
   )
 }
 
